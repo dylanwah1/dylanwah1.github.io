@@ -1,69 +1,342 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+//Dylan Romeo Wahlstrom
+//1305
+<html lang="en">
+<head>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Dylanwah1.github.io : " />
+	<meta charset="utf-8">
+	
+	<title>iTour</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+</head>
+<body>
+    <div data-role="page" id="itourstart">
+        <div data-role="header" data-position="fixed" data-theme="a"></div>
+        <div data-theme="a">
+            <div data-role="content"> <a href="#homeitour">
+                    <div style=" text-align:center">
+                        <img style="width: 288px; height: 300px" src="images/2zo8xnl.png" />
+                    </div>
+                </a>
 
-    <title>Dylanwah1.github.io</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/dylanwah1">View on GitHub</a>
-
-          <h1 id="project_title">Dylanwah1.github.io</h1>
-          <h2 id="project_tagline"></h2>
-
-        </header>
+            </div>
+        </div>
     </div>
+    <div data-role="page" id="homeitour" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="a">
+             <h1>iTour</h1>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
+            <div data-role="footer" data-position="fixed" data-theme="c">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#homeitour" data-icon="home" data-theme="a" class="ui-btn-active ui-state-persist">Home</a>
+                        </li>
+                        <li><a href="#addTour" data-transition="flip" data-icon="plus" data-theme="a">Tour</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="content">
+            <div data-theme="a">
+                <ul data-role="listview">
+                    <li> <a href="#venuecontacts">
+                        Venue Contacts
+                    </a>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+                    </li>
+                    <li> <a href="#error">
+                        Band Contacts
+                    </a>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+                    </li>
+                    <li> <a href="#error">
+                        Merchandise Contacts
+                    </a>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+                    </li>
+                    <li> <a href="#error">
+                        Previous Tours
+                    </a>
 
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
     </div>
+    <div data-role="page" id="addTour" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="a">
+             <h1>iTour</h1>
+
+            <div data-role="footer" data-position="fixed" data-theme="c">
+                <div data-role="navbar" data-position="fixed">
+                    <ul>
+                        <li><a href="#homegroom" data-transition="flip" data-icon="home" data-theme="a">Home</a>
+                        </li>
+                        <li><a href="#add" data-icon="plus" data-theme="a" class="ui-btn-active ui-state-persist">Tour</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="navbar" id="navbar">
+            <ul>
+                <button id="displayDataButton" value="View Saved Tours" data-theme="a" data-icon="check"></button>
+            </ul>
+        </div>
+        <div data-role="content">
+            <form action="" method="post" id="tourform">
+                <div data-role="fieldcontain">
+                    <label for="fname">Tour Name:</label>
+                    <input type="text" name="fname" id="fname" class="required" />
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="lname">Start Date:</label>
+                    <input type="text" name="lname" id="lname" class="required" />
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="email">End Date:</label>
+                    <input type="text" name="email" id="email" class="required" />
+                </div>
+                <div data-role="content">
+                    <div data-theme="a">
+                        <ul data-role="listview">
+                            <li> <a href="#budget">
+                        Add Budget
+                    </a>
+
+                            </li>
+                            <li> <a href="#adddate">
+                        Add Dates
+                    </a>
+
+                            </li>
+                            <li> <a href="#addvenues">
+                        Add Venues
+                    </a>
+
+                            </li>
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" value="Submit" data-theme="a" id="submitButton">
+                    <input type="reset" value="Reset" data-theme="a">
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <div data-role="page" id="displayData" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="a">
+             <h1>iTour</h1>
+
+            <div data-role="footer" data-position="fixed" data-theme="c">
+                <div data-role="navbar" data-position="fixed">
+                    <ul>
+                        <li><a href="#homegroom" data-transition="flip" data-icon="home" data-theme="a">Home</a>
+                        </li>
+                        <li><a href="#add" data-icon="plus" data-theme="a" class="ui-btn-active ui-state-persist">Tour</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="navbar" id="navbar">
+            <ul>
+                <button id="clearLocal" value="Clear local-storage" data-theme="a" data-icon="gear"></button>
+            </ul>
+        </div>
+        <div data-role="content" id="container"></div>
+        <div data-role="popup" id="deleteObject" data-theme="a" data-overlay-theme="a" class="ui-content" style="max-width:200px; padding-bottom:2em;">
+            	<h3>Delete Entry?</h3>
+
+            <p>The entry will be lost.</p>	<a href="#" data-role="button" data-rel="back" data-theme="a" data-icon="check" data-inline="true" data-mini="true" id="deleteButton">Delete</a>
+	<a href="#" data-role="button" data-rel="back" data-inline="true" data-mini="true">Cancel</a>
+
+        </div>
+        <div data-role="popup" id="saveConfirm" data-theme="a" data-overlay-theme="a" class="ui-content" style="max-width:200px; padding-bottom:2em;">
+            	<h3>Data Saved</h3>
+
+            <p>Data saved into local-storage...</p>	<a href="#displayData" data-role="button" data-rel="back" data-theme="a" data-icon="check" data-inline="true" data-mini="true" id="deleteButton">Ok</a>
+
+        </div>
+    </div>
+   
+    
+   
+    
+   
+    
+    
+     
 
     
 
-  </body>
+	<!-- JavaScript under here -->
+	<script>
+	  
+ $(document).ready();
+
+
+
+	    $(document).on('pageinit', '#addTour', function () {
+	        var $myTourForm = $('#tourForm');
+	        $('#button').on('click', function (e) {
+	            e.preventDeafault();
+
+
+
+
+	            function storeData(key) {
+	                if (!key) {
+	                    var id = Math.floor(Math.random() * 1000000001);
+	                } else {
+	                    id = key;
+	                }
+
+	                var item = {};
+
+	                item.fname = ["Tour Name:", $('#fname').val()];
+	                item.lname = ["Start Date:", $('#lname').val()];
+	                item.email = ["End Date:", $('#email').val()];
+
+	                localStorage.storeItem(key, JSON.stringify(item));
+	                alert("New Tour Started!");
+	            }
+
+
+	            $myTourForm.validate({
+
+
+	                submitHandler: function (randomId) {
+
+
+	                    var data = $myTourForm.serializeArray();
+
+
+	                    var jsonObj = JSON.stringify(data);
+
+
+	                    var randomId = genRandomId();
+
+
+	                    localStorage.setItem(randomId, jsonObj);
+
+
+	                    $($myTourForm)[0].reset();
+
+
+	                    window.location = '#displayInfo';
+
+	                }
+	            });
+
+	            $('#displayDataButton').click(function () {
+
+
+	                window.location = '#displayData';
+
+
+	                window.location.reload('#displayData');
+	            });
+	        });
+
+	        $(document).on('pageinit', '#displayData', function () {
+
+
+	            $('#clearLocal').click(function () {
+
+	                localStorage.clear();
+	                window.location.reload();
+	            });
+
+
+	            outputData();
+
+
+	            $('#container').on('click', 'ul', function () {
+
+	                alert("Entry ID: " + this.id);
+
+
+	            });
+	        });
+
+
+
+
+
+
+	        var outputData = function () {
+
+	            for (var i = 0, j = localStorage.length; i < j; i++) {
+
+
+	                var storedKey = localStorage.key(i);
+
+
+	                var storedObj = localStorage.getItem(storedKey);
+
+
+	                var parsedObj = JSON.parse(storedObj);
+
+
+	                parsedObj.id = storedKey;
+
+
+	                var ulListView = $('#container').append('<ul data-role="listview" data-split-icon="minus" data-split-theme="c" data-inset="true" id="ulOrigin' + parsedObj.id + '"></ul>');
+
+
+	                var insideLi = $('#ulOrigin' + parsedObj.id).append('<li><a href="#li' + parsedObj.id + '"><img src="images/' + parsedObj[0].value + '.png"><h2>' + parsedObj[1].value + '</h2><p>' + parsedObj[0].value + '</p></a><a href = "#deleteObject" data-rel = "popup" data-position-to = "window" data-transition = "pop">Delete Entry</a></li>');
+
+	                insideLi.listview().listview('refresh');
+
+
+	                console.log(parsedObj);
+	            }
+
+
+	        };
+
+
+	        var genRandomId = function () {
+	            var randomId = Math.floor(Math.random() * 10000001);
+	            return randomId;
+	        };
+
+
+	        var targetObj = function (id) {
+
+	            $(id).click(function () {
+	                alert(id);
+	            });
+	        });
+
+
+	</script>
+        
+        <<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+	<script type = "text/javascript" src = "js/jquery.validate.min.js"></script>
+	<script type = "text/javascript" src = "js/jqm.js"></script>
+	
+
+</body>
 </html>
